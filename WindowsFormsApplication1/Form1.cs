@@ -59,8 +59,6 @@ namespace WindowsFormsApplication1
             {
                 return;
             }
-
-
         }
 
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
@@ -116,26 +114,22 @@ namespace WindowsFormsApplication1
         {
             string address = "https://google.com";
             webBrowser1.Navigate(new Uri(address));
-
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-
             string address = "https://roblox.com";
             webBrowser1.Navigate(new Uri(address));
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
             string address = "https://wikipedia.org";
             webBrowser1.Navigate(new Uri(address));
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-
             string address = "https://docs.microsoft.com/en-us/dotnet/csharp/";
             webBrowser1.Navigate(new Uri(address));
         }
