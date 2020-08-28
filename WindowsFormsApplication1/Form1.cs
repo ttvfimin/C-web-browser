@@ -59,8 +59,6 @@ namespace WindowsFormsApplication1
             {
                 return;
             }
-
-
         }
 
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
@@ -95,6 +93,8 @@ namespace WindowsFormsApplication1
                 try
                 {
                     System.IO.File.Delete(currentFile);
+                    string currentFile2 = currentFile;
+                    Console.WriteLine(currentFile2);
                 }
                 catch (Exception ex)
                 {
@@ -116,19 +116,16 @@ namespace WindowsFormsApplication1
         {
             string address = "https://google.com";
             webBrowser1.Navigate(new Uri(address));
-
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-
             string address = "https://roblox.com";
             webBrowser1.Navigate(new Uri(address));
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-
             string address = "https://wikipedia.org";
             webBrowser1.Navigate(new Uri(address));
         }
@@ -161,6 +158,31 @@ namespace WindowsFormsApplication1
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            string address = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+            webBrowser1.Navigate(new Uri(address));
+            Console.WriteLine("lmao you got rick rolled");
+            button2.Text = "lmao rick roll";
+            button4.Text = "lmao rick roll";
+            button11.Text = "lmao rick roll";
+            button12.Text = "lmao rick roll";
+            button5.Text = "lmao rick roll";
+            button6.Text = "lmao rick roll";
+            button7.Text = "lmao rick roll";
+            button8.Text = "lmao rick roll";
+            button9.Text = "lmao rick roll";
+            button10.Text = "lmao rick roll";
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            string address = webBrowser1.Url.ToString();
+            webBrowser1.Navigate(new Uri("about:blank"));
+            webBrowser1.Navigate(new Uri(address));
+            textBox1.Text = address;
         }
     }
 }

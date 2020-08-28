@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -42,6 +41,9 @@
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.button14 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -57,16 +59,6 @@
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Location = new System.Drawing.Point(5, 46);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.ScriptErrorsSuppressed = true;
-            this.webBrowser1.Size = new System.Drawing.Size(982, 639);
-            this.webBrowser1.TabIndex = 1;
-            this.webBrowser1.Url = new System.Uri("https://www.google.com", System.UriKind.Absolute);
             // 
             // button3
             // 
@@ -86,7 +78,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(120, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(586, 20);
+            this.textBox1.Size = new System.Drawing.Size(569, 20);
             this.textBox1.TabIndex = 4;
             // 
             // button2
@@ -105,11 +97,11 @@
             // 
             this.button4.BackColor = System.Drawing.SystemColors.ControlDark;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(898, 7);
+            this.button4.Location = new System.Drawing.Point(737, 7);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(89, 28);
+            this.button4.Size = new System.Drawing.Size(64, 28);
             this.button4.TabIndex = 6;
-            this.button4.Text = "Refresh URL";
+            this.button4.Text = "Get URL";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -217,7 +209,7 @@
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button12.Location = new System.Drawing.Point(712, 7);
+            this.button12.Location = new System.Drawing.Point(807, 7);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(180, 28);
             this.button12.TabIndex = 14;
@@ -225,12 +217,50 @@
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.SystemColors.ControlText;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Location = new System.Drawing.Point(1063, 11);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(100, 57);
+            this.button13.TabIndex = 15;
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.AccessibleDescription = "CSWB";
+            this.webBrowser1.AccessibleName = "CSWB";
+            this.webBrowser1.AccessibleRole = System.Windows.Forms.AccessibleRole.WhiteSpace;
+            this.webBrowser1.Location = new System.Drawing.Point(5, 46);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.Size = new System.Drawing.Size(982, 639);
+            this.webBrowser1.TabIndex = 1;
+            this.webBrowser1.Url = new System.Uri("https://www.google.com", System.UriKind.Absolute);
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Location = new System.Drawing.Point(695, 7);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(36, 28);
+            this.button14.TabIndex = 16;
+            this.button14.Text = "R";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1236, 697);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.button10);
@@ -259,7 +289,6 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.WebBrowser webBrowser1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button2;
@@ -272,6 +301,9 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.Button button14;
     }
 }
 
